@@ -162,7 +162,7 @@ We tested the model under **pixel shifts along x and y axes**.
 
 Below is a 2D slice from the side view of the original 3D volumetric MRI image (without skull-stripping), the ground-truth mask of the skull-stripped brain MRI, and the predicted mask from the proposed model using the Adaptive Polyphase Pooling Subsampling technique.
 
-![image2](image2)
+![image2](brainMRI)
 
 Fig. 6. displays a 2d slice of the side view of the original 3d volumetric MRI image without skull-stripping, the actual mask of the skull-stripped Brain MRI image and the predicted mask by the proposed model with the Adaptive Pooling Subsampling technique.
 
