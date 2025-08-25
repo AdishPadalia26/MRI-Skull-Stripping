@@ -1,4 +1,4 @@
-# MRI Skull-Stripping with Shift-Invariant Modified U-Net
+# MRI Skull-Stripping with Shift-Invariant Modified U-Net Using Adaptive Polyphase Pooling Layers
 
 Lightweight, robust brain MRI skull-stripping using a **Modified U-Net** with **Adaptive Polyphase Pooling (APP)** layers, ensuring shift-invariance and stable predictions across translations in the imaging plane.
 
