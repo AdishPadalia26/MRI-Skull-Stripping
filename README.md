@@ -121,7 +121,7 @@ We tested the model under **pixel shifts along x and y axes**.
 - **Without Adaptive Polyphase Pooling (Table III):** accuracy fluctuates significantly depending on the shift, sometimes dropping as low as **74%** or **79%**.  
 - **With Adaptive Polyphase Pooling (Table IV):** accuracy remains stable, consistently around **99.2%–99.4%**, confirming **shift-invariance**.
 
-#### Table III: List of accuracies on U-Net without Adaptive Polyphase Pooling Layers
+#### Table I: List of accuracies on U-Net without Adaptive Polyphase Pooling Layers
 
 | Pixel Range | 0     | 64    | 128   | 192   | 256   |
 |-------------|-------|-------|-------|-------|-------|
@@ -131,7 +131,7 @@ We tested the model under **pixel shifts along x and y axes**.
 | **192**     | 98.23 | 97.56 | 79.34 | 94    | 98    |
 | **256**     | 94.9  | 98.65 | 95.55 | 96.23 | 94.13 |
 
-#### Table IV: List of accuracies on U-Net with Adaptive Polyphase Pooling Layers
+#### Table II: List of accuracies on U-Net with Adaptive Polyphase Pooling Layers
 
 | Pixel Range | 0     | 64    | 128   | 192   | 256   |
 |-------------|-------|-------|-------|-------|-------|
@@ -141,7 +141,6 @@ We tested the model under **pixel shifts along x and y axes**.
 | **192**     | 99.1  | 99    | 99.28 | 99.3  | 99.22 |
 | **256**     | 99.33 | 99.39 | 99.46 | 99.39 | 99.35 |
 
-![Shift-Invariance Results](image1)
 
 📌 **Key Insight:** Adaptive Polyphase Pooling ensures consistent accuracy across all displacements, unlike standard pooling which degrades performance under shifts.
 
@@ -162,9 +161,9 @@ We tested the model under **pixel shifts along x and y axes**.
 
 Below is a 2D slice from the side view of the original 3D volumetric MRI image (without skull-stripping), the ground-truth mask of the skull-stripped brain MRI, and the predicted mask from the proposed model using the Adaptive Polyphase Pooling Subsampling technique.
 
-![image2](brainMRI)
+![Brain MRI Skull-Stripping Example](brainMRI.png)
 
-Fig. 6. displays a 2d slice of the side view of the original 3d volumetric MRI image without skull-stripping, the actual mask of the skull-stripped Brain MRI image and the predicted mask by the proposed model with the Adaptive Pooling Subsampling technique.
+Fig. displays a 2d slice of the side view of the original 3d volumetric MRI image without skull-stripping, the actual mask of the skull-stripped Brain MRI image and the predicted mask by the proposed model with the Adaptive Pooling Subsampling technique.
 
 ---
 
